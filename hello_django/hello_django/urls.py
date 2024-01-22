@@ -22,6 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('hello/', views.hello)
     #path('hello/<nome>', views.hello)
-    path('hello/<nome>/<int:idade>', views.hello)
+    #path('hello/<nome>/<int:idade>', views.hello)
+    path('sum/<int:algarism1>/<int:algarism2>', views.sum),
+    path('multiplication/<int:algarism1>/<int:algarism2>', views.multiplication),
+    path('dividing/<int:algarism1>/<int:algarism2>', views.dividing),
+    path('subtraction/<int:algarism1>/<int:algarism2>', views.subtraction)
 
 ]
